@@ -22,4 +22,4 @@ def index ():
 @app.route('/market')
 def about_page ():
 	items = Item
-	return render_template('about.html', items = items)
+	return render_template('about.html', context=items)
